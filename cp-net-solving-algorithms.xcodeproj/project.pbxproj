@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88EB062C28D64BE000BADD8D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88EB062B28D64BE000BADD8D /* main.cpp */; };
+		88EB063328D64F7B00BADD8D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 88EB063228D64F7B00BADD8D /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		88EB062828D64BE000BADD8D /* cp-net-solving-algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cp-net-solving-algorithms"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EB062B28D64BE000BADD8D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		88EB063228D64F7B00BADD8D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				88EB062B28D64BE000BADD8D /* main.cpp */,
+				88EB063228D64F7B00BADD8D /* Makefile */,
 			);
 			path = "cp-net-solving-algorithms";
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EB063328D64F7B00BADD8D /* Makefile in Sources */,
 				88EB062C28D64BE000BADD8D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
