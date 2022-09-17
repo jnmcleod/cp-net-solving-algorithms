@@ -20,6 +20,13 @@
  
  It then attempts to find up to k solutions
  These solutions are ranked based on the number of constraints they violate.  The total ranking for the solution will be the sum of all of the order constraints it violates, and the algorithm will only keep the best (which may be up to k, if they all violate the same number of constraints)
+ 
+ Input parameters:
+ n: number of variables
+ p: tightness, 0 < p < 1.  Higher values mean more constraints
+ r: 0 < r < 1.  Suggested value 0.6
+ alpha: 0 < α < 1.  Suggested value 0.5
+ k: number of desired solutions.  The program will stop after finding this many, but may return fewer if there are not k pareto optimal solutions
  */
 
 #include <algorithm> //for std::find
@@ -77,15 +84,15 @@ void printSolutions();
 
 void readValues()
 {
-    std::cout << "n: ";
+    std::cout << "Number of variables (n): ";
     std::cin >> numberOfVars;
-    std::cout << "p: ";
+    std::cout << "Tightness (p): ";
     std::cin >> tightness;
     std::cout << "alpha: ";
     std::cin >> alpha;
     std::cout << "r: ";
     std::cin >> r;
-    std::cout << "k: ";
+    std::cout << "Number of desired pareto optimal solutions (k): ";
     std::cin >> desiredSolutions;
 }
 
