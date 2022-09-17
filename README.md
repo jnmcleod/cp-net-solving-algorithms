@@ -25,7 +25,7 @@ Notes:
 Input parameters:
  n: number of variables
  
- p: tightness, 0 < p < 1.  Higher values mean more constraints
+ p: tightness, 0 < p < 1.  Suggested values between 0.05 and 0.4. Higher values mean more constraints, which drastically increases processing time
  
  r: 0 < r < 1.  Suggested value 0.6
  
