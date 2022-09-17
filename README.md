@@ -19,11 +19,16 @@ Notes:
  This program first generates a Constrained CP Net given a set of input parameters, and then attempts to find the best solutions via standard backtrack, forward checking, and full lookahead algorithms, with arc consistency optionally run beforehand
  
  It then attempts to find up to k solutions
+ 
  These solutions are ranked based on the number of constraints they violate.  The total ranking for the solution will be the sum of all of the order constraints it violates, and the algorithm will only keep the best (which may be up to k, if they all violate the same number of constraints)
 
 Input parameters:
  n: number of variables
+ 
  p: tightness, 0 < p < 1.  Higher values mean more constraints
+ 
  r: 0 < r < 1.  Suggested value 0.6
+ 
  alpha: 0 < α < 1.  Suggested value 0.5
+ 
  k: number of desired solutions.  The program will stop after finding this many, but may return fewer if there are not k pareto optimal solutions
